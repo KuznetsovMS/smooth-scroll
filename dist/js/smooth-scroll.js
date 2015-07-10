@@ -11,7 +11,7 @@
 	if ( typeof define === 'function' && define.amd ) {
 		define(['buoy'], factory(root));
 	} else if ( typeof exports === 'object' ) {
-		module.exports = factory(root, require('buoy'));
+		module.exports = factory(root, require('./buoy'));
 	} else {
 		root.smoothScroll = factory(root, root.buoy);
 	}
